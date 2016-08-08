@@ -1,3 +1,13 @@
+#!/bin/bash
+#===============================================================================================
+#   System Required:  CentOS 6,7, Debian, Ubuntu
+#   Version: 1.0.0
+#   Version type: Public
+#	  Extra's:
+#   Author: Mareczin <pm@me> <gg:45602375> <TS3:OnlineSpeak.eu Nick: Mareczin>
+#   Intro:  github.com/Mareczin/ts3-backup
+#===============================================================================================
+
 #====CONFIG START==========
 #Date
 date=$(date +"%d-%B_%H-%M")
@@ -13,10 +23,6 @@ serverloc=$serverloc
 
 
 #DO NOT EDIT CODE AFTER THIS LINE!!!!
-wget -q -N https://up.life-games.cz/files/load.txt
-cat load.txt
-sleep 5
-
 
 #Archive creating...
 echo "Compressing TeamSpeak3 server files."
@@ -29,9 +35,3 @@ echo "Uploading files to mega.nz storage."
 #deleting local copy of archive
 echo "Deleting local copy of archive."
 rm /backup/$prefix$date.7z
-
-wget -q -N https://up.life-games.cz/files/endtext.txt
-cat endtext.txt
-
-#Thanks for using, for any support, contact my on FB page: https://fb.com/lifegamescz or on E-Mail: dj@life-games.cz. I am here to  help you :)
-#Enjoy my work, if you really like it. Please consider Donation to my PayPal: atack9@gmail.com. You will support LiFe-Games.cz project and development of this script.
